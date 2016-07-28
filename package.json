@@ -1,0 +1,22 @@
+{
+  "name": "landing_page",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/o-sewell/personal_page.git"
+  },
+  "author": "Oliver Sewell",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/o-sewell/personal_page/issues"
+  },
+  "homepage": "https://github.com/o-sewell/personal_page#readme",
+  "devDependencies": {
+    "gulp": "^3.9.1"
+  }
+}
