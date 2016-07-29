@@ -1,3 +1,35 @@
-body {
-  font-size: $base--font-size;
+.header {
+  background: url('../images/sky.jpeg') no-repeat top center;
+  background-size: cover;
+  text-align: center;
+  padding: em(10px);
+
+  &__image  {
+    height: em(150px);
+    width: em(150px);
+    border-radius: 50%;
+    margin-top: em(50px);
+    border: 5px solid #0C83DD;
+  }
+
+  &__heading {
+    padding: em(10px);
+    margin-top: em(5px);
+    background: black;
+    color: white;
+    display: table;
+    margin: em(10px) auto;
+    border-radius: em(5px);
+
+    &--main {
+      font-size: em(30px);
+    }
+
+    &--sub {
+      font-size: em(20px);
+      background: #2D2D2D;
+      margin-bottom: em(50px);
+    }
+  }
+
 }
