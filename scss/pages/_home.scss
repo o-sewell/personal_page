@@ -8,8 +8,8 @@
     height: em(150px);
     width: em(150px);
     border-radius: 50%;
-    margin-top: em(50px);
-    border: 5px solid #0C83DD;
+    margin-top: em(100px);
+    border: 6px solid #0C83DD;
   }
 
   &__heading {
@@ -33,3 +33,80 @@
   }
 
 }
+
+.info {
+   background: #00A4D6;
+   padding: 10px 0;
+
+   &__card {
+     margin: em(30px) auto;
+     background: #F7F7F7;
+     padding: 20px 40px 40px;
+     max-width: 80%;
+     border-bottom: 5px solid #0c7197;
+     transition: border .5s ease-in-out;
+     border-radius: 6px;
+     box-shadow: 5px 0 5px -5px black,
+                -5px 0 5px -5px black;
+     line-height: 1.5;
+
+     &:hover {
+       border-color: grey;
+     }
+   }
+
+   &__title {
+     font-size: em(24px);
+     font-weight: bold;
+     padding: em(10px) 0;
+     text-align: left;
+   }
+
+   &__skills {
+     padding: 0;
+     text-align: center;
+
+     li {
+       border-radius: 6px;
+       display: inline-block;
+       background: #ff9904;
+       color: white;
+       padding: em(5px) em(10px);
+       margin: em(8px) em(3px);
+       transition: all .5s ease-in;
+       cursor: pointer;
+
+       &:hover {
+         background: #0399ff;
+       }
+
+       &:nth-child(odd) {
+         background: #0399ff;
+
+         &:hover {
+           background: #ff9904;
+         }
+       }
+     }
+   }
+}
+
+
+
+
+/* Styles for larger screens */
+@media screen and (min-width: 720px) {
+
+  .info {
+    overflow: hidden;
+  }
+   .info__card {
+     width: 40%;
+     float: left;
+     margin: 30px 5%;
+   }
+
+   footer {
+     clear: both;
+   }
+ }
