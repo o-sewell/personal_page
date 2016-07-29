@@ -1,0 +1,26 @@
+.nav {
+  background: black;
+  min-height: em(35px);
+
+  &__ul {
+    padding: 0 em(20px);
+  }
+
+  &__li {
+    display: inline-block;
+    color: grey;
+    float: right;
+    padding: em(10px);
+    transition: all 1s ease-in-out;
+    cursor: pointer;
+
+    &:first-child {
+      float: left;
+      color: white;
+    }
+
+    &:hover {
+      color: white;
+    }
+  }
+}
