@@ -10,6 +10,11 @@
     border-radius: 50%;
     margin-top: em(100px);
     border: 6px solid #0C83DD;
+    transition: transform 1s ease-in-out;
+
+    &:hover {
+      transform: rotate(0.5turn);
+    }
   }
 
   &__heading {
@@ -99,12 +104,13 @@
 
   .info {
     overflow: hidden;
+
+    &__card {
+      width: 40%;
+      float: left;
+      margin: 30px 5%;
+    }
   }
-   .info__card {
-     width: 40%;
-     float: left;
-     margin: 30px 5%;
-   }
 
    footer {
      clear: both;
